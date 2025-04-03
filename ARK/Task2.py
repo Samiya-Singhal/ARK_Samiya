@@ -7,6 +7,10 @@ pi_image = Image.open("pi_image.png").convert("L")
 pi_array = np.array(pi_image)
 
 corrected_values = pi_array/ (10 * math.pi)
+print(pi_array[0:15])
+print(pi_array[16:30])
+print(pi_array[31:45])
+print(pi_array[46:50])
 sorted_values = np.sort(corrected_values.flatten())[::-1] 
 
 filter_1 = sorted_values[:4]
